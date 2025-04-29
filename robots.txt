@@ -1,3 +1,5 @@
+# robots.txt pour DigiAgency
+
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +14,17 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /config/
+Disallow: /*.env$
+Disallow: /*.json$
+Allow: /
+
+# Sitemap pour Google
+Sitemap: https://digit-agency.netlify.app/sitemap.xml
+
